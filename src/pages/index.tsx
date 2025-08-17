@@ -45,7 +45,7 @@ export default function HomePage() {
       <Head>
         <title>Gheizla Santos - Atividade Grafico P3</title>
       </Head>
-
+ 
       <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-gray-900 text-white">
         <h1 className="text-3xl font-bold mb-8 text-center">
           Quantidade de Disciplinas por Curso
