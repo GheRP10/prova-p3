@@ -23,7 +23,8 @@ export default function HomePage() {
   useEffect(() => {
     async function buscarDados() {
       try {
-        const apiUrl = "https://gs-api-escola.azurewebsites.net/api/Relatorios/DisciplinasPorCurso";
+        const apiUrl = "https://api-prova-p3-ghesantos-gbf2cjcaf0ahdafa.brazilsouth-01.azurewebsites.net/api/Relatorios/DisciplinasPorCurso";
+    
         const resposta = await fetch(apiUrl);
         const dados: DisciplinaData[] = await resposta.json();
         const dadosAjustados = dados.map((item: any) => ({
@@ -45,7 +46,7 @@ export default function HomePage() {
       <Head>
         <title>Gheizla Santos - Atividade Grafico P3</title>
       </Head>
- 
+
       <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-gray-900 text-white">
         <h1 className="text-3xl font-bold mb-8 text-center">
           Quantidade de Disciplinas por Curso
